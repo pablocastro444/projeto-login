@@ -8,15 +8,24 @@
 </head>
 <body>
    <main>
-    <section>
-        <div id="login">
-            foto
+    <section id="login">
+        <div id="imagem">
+            
         </div>
         <div id="formulario">
             <h1>Login</h1>
             <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configuração no seu ambiente.</p>
-            <form action="login.php" method="post">
-
+            <form action="login.php" method="post" autocapitalize="on">
+                <div class="campo">
+                    <label for="ilogin">Login
+                    </label>
+                    <input type="email" name="login" id="ilogin" placeholder="Seu Email" autocomplete="email" required maxlength="30">
+                </div>
+                <div class="campo">
+                    <label for="isen">Senha</label>
+                    <input type="password" name="sen" id="isen" placeholder="Sua Senha" autocomplete="current-password" required minlength="8" maxlength="20">
+                </div>
+                <input type="submit" value="Entrar">
             </form>
         </div>
     </section>
