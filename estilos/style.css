@@ -16,7 +16,7 @@ Roxo: #D500F5
 }
 
 body, html {
-    background-color: #1129f5;
+    background-color: #D500F5;
     width: 50vw;
     height: 50vh;
 }
@@ -38,10 +38,24 @@ section#login {
 
     background-color: white;
     border-radius: 20px;
-   transform: translate(-50%, -50%); 
+   transform: translate(-50%, -50%);
+   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.452);
+   transition: width .5s, heigth .5s; 
+   transition-timing-function: ease;
 }
 
 section#login > div#imagem {
     background: #8D11F5 url(../imagens/pixabay.jpg) no-repeat;
+    height: 150px;
+    background-size: cover;
     display: block;
 }
+
+section#login > div#formulario {
+    padding: 10px;
+}
+
+div.campo {
+    margin-top: 20px;
+}
+
